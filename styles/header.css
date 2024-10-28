@@ -1,0 +1,88 @@
+.container>header>.header{
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+    /* align-items: end; */
+    gap: 20px;
+    justify-content: space-between;
+}
+.container>header>.header>.search{
+    width: 60%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 30px;
+    padding-left: 10px ;
+}
+.container>header>.header>.search>.btn-search{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0);
+}
+.container>header>.header>.search>.btn-search>.btn{
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container>header>.header>.search>.btn-search>.btn>button{
+    padding: 10px 30px;
+    border-radius: 8px;
+    border: 1px solid #e21b70;
+    background-color: #e21b70;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1em;
+    transition: all .2s ease;
+}
+.container>header>.header>.search>.btn-search>.btn>button:hover{
+    background-color: #b81c60;
+    padding: 12px 32px;
+    transition: all .2s ease;
+}
+.container>header>.header>.search>.btn-search>.inputarea{
+    width: 85%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1px solid #000;
+    padding: 10px;
+    border-radius: 8px;
+    position: relative;
+}
+.container>header>.header>.search>.btn-search>.inputarea>.labeltext{
+    position: absolute;
+    z-index: 1;
+    background-color: #fff;
+    padding: 10px;
+    transition: all .2s ease;
+}
+.container>header>.header>.search>.btn-search>.inputarea>input:focus ~ .labeltext{
+    transform: translate(-45px, -25px) scale(0.6);
+    padding: 10px;
+    transition: all .2s ease;
+}
+.container>header>.header>.search>.btn-search>.inputarea>input{
+    width: 75%;
+    outline: none;
+    border: none;
+    padding: 0px 10px;
+}
+.container>header>.header>.panda{
+    width: 45rem;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+    height: 50rem;
+    /* background-color: brown; */
+}
+.container>header>.header>.panda>img{
+    height: 40rem;
+}

@@ -1,0 +1,51 @@
+.container>main>.cities{
+    width: 100%;
+    /* height: 150vh; */
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container>main>.cities>.text{
+    width: 90%;
+    background-color: #fff;
+    padding: 10px;
+}
+.container>main>.cities>.text>p{
+    font-size: 36px;
+    font-weight: 600;
+}
+.container>main>.cities>.provine{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px 0px;
+    gap: 30px;
+}
+.container>main>.cities>.provine>.box{
+    border-radius: 20px;
+    height: 250px;
+    background-color: aquamarine;
+    position: relative;
+    overflow: hidden;
+}
+.container>main>.cities>.provine>.box>img{
+    width: 100%;
+    height: 100%;
+    transition: all .2s ease-in-out  ;
+}
+.container>main>.cities>.provine>.box:hover>img{
+    transform: scale(1.2);
+    transition: all .2s ease-in-out  ;
+}
+.container>main>.cities>.provine>.box>p{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: block;
+    text-align: center;
+    width: 150px;
+    padding: 20px 10px;
+    background-color: #fff;
+    border-radius: 10px;
+}

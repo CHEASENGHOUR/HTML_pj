@@ -1,0 +1,72 @@
+.container>footer{
+    width: 100%;
+    height: 250vh;
+    display: flex;
+    /* justify-content: center; */
+    gap: 50px;
+    flex-direction: column;
+    align-items: center;
+}
+.container>footer>.Popular{
+    width: 90%;
+}
+.container>footer hr{
+    color: gray;
+}
+.container>footer p{
+    margin: 25px 0px;
+    font-weight: 700;
+}
+.container>footer .link{
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
+}
+.container>footer .link a{
+    position:relative;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    /* background-color: aqua; */
+}
+.container>footer .link a::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+}
+.container>footer .link a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+}
+.container>footer .link a:hover::after{
+    width: 100%;
+    background-color: #000;
+    transition: .2s ease-in;
+}
+.container>footer>.available{
+    width: 90%;
+}
+.container>footer>.available .link{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: start;
+}
+.container>footer>.available-in{
+    width: 90%;
+}
+.container>footer>.available-in .link:nth-of-type(1){
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    place-items: start;
+}
